@@ -57,3 +57,16 @@ _Append-only chronological record of all wiki operations._
   - `surahName.ts` → `wiki/sources/surah-name-ts.md`
 - **Index updated**: 40 pages total
 - **Note**: All code summaries written in Bahasa Indonesia as requested.
+
+## [2026-05-27 00:04] qa | Backfill answers from chat into wiki
+- Created 3 wiki pages for previously chat-only answers:
+  - `wiki/sources/total-quran-stats.md` — total surahs/ayahs/kalimahs/harfs/hisab
+  - `wiki/sources/huruf-nun-surah-qamar.md` — 121 huruf Nun di Surah Al-Qamar
+  - `wiki/sources/llm-wiki-pattern-explained.md` — penjelasan pattern LLM Wiki
+- **Lesson learned**: Never answer in chat without filing a wiki page. Chat is temporary, wiki is persistent.
+
+## [2026-05-27 00:05] schema | Updated AGENTS.md with strict query rules
+- Added **Rule #7**: "Every answer becomes a wiki page — NO exceptions"
+- Updated **Query Workflow**: explicit step-by-step for filing answers
+- Added bold warning: "The wiki is the persistent memory. Chat is temporary."
+- Renumbered old Rule #7 → Rule #8.

@@ -33,6 +33,11 @@ _Content catalog for the qciphra knowledge base. Updated on every ingest and que
 - [[rag]] — Retrieval-augmented generation; stateless, rediscovers knowledge every query.
 - [[zettelkasten]] — Atomic note-taking method with heavy interlinking.
 
+## Sources — Q&A / Factual Lookups
+- [[total-quran-stats]] — Total surahs, ayahs, kalimahs, harfs, Hisab Jummal seluruh Quran.
+- [[huruf-nun-surah-qamar]] — Jumlah huruf Nun (ن) di Surah Al-Qamar = 121.
+- [[llm-wiki-pattern-explained]] — Penjelasan pattern LLM Wiki dan aturan wajib filing jawaban.
+
 ## Sources — Research Documents
 - [[abjad-numeral]] — Hisab Jummal / Abjad numeral system history and structure.
 - [[algoritma-checksum]] — Checksum algorithm applied to Quran structure (57:57 parity).
@@ -69,4 +74,4 @@ _(No dashboards yet.)_
 
 ---
 
-_Last updated: 2026-05-27 | 40 pages total_
+_Last updated: 2026-05-27 | 43 pages total_

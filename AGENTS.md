@@ -72,8 +72,16 @@ sources: [source-filename.md]   # which raw sources informed this page
 - Every page should have at least 2 inbound `[[links]]` from other wiki pages.
   The index doesn't count. During lint passes, flag orphans.
 
-### 7. Answer formats depend on the question
-- Simple factual question → concise answer with `[[citations]]`.
+### 7. Every answer becomes a wiki page — NO exceptions
+- **Never** answer a question only in chat. Always create a wiki page.
+- Simple factual question → `wiki/sources/` page with the answer + context.
+- Complex analysis → `wiki/synthesis/` or `comparisons/` page.
+- Visual request → generate a Mermaid diagram, Marp slide deck, or matplotlib
+  chart and save it in `dashboards/`.
+- The chat is **temporary**. The wiki is **persistent**. If you didn't write it to a file, it will be lost when the session ends.
+
+### 8. Answer formats depend on the question
+- Simple factual question → concise answer with `[[citations]]` + new wiki page.
 - Complex analysis → write a new wiki page in `synthesis/` or `comparisons/`,
   then link to it from the index.
 - Visual request → generate a Mermaid diagram, Marp slide deck, or matplotlib
@@ -95,14 +103,23 @@ When the human drops a source in `raw/sources/` and asks you to process it:
 8. **Append** an entry to `wiki/log.md`.
 9. A single source may touch 10–15 wiki pages. That's expected.
 
-### Query Workflow
-When the human asks a question:
+### Query Workflow — STRICT RULE: ALWAYS FILE ANSWERS
+
+When the human asks a question, **never** just answer in chat. Always persist the answer as a wiki page.
 
 1. **Read** `wiki/index.md` to find relevant pages.
 2. **Read** the most relevant pages.
 3. **Synthesize** an answer with `[[wikilink]]` citations.
-4. If the answer is substantial and reusable, **file it** as a new wiki page
-   and update the index + log.
+4. **ALWAYS file a new wiki page** — no exceptions for "simple" questions:
+   - Factual lookup → `wiki/sources/` (e.g., `huruf-nun-surah-qamar.md`)
+   - Analysis/derivation → `wiki/synthesis/`
+   - New concept → `wiki/concepts/`
+   - Person/place/thing → `wiki/entities/`
+5. **Cross-reference** with `[[wikilinks]]` to all related pages.
+6. **Update** `wiki/index.md` with the new page.
+7. **Append** an entry to `wiki/log.md`.
+
+**The wiki is the persistent memory. Chat is temporary. If it's not in the wiki, it doesn't exist.**
 
 ### Lint Workflow
 When asked to health-check the wiki:
