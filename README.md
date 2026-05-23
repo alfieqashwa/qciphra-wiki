@@ -10,6 +10,10 @@ Currently at **48+ pages** across research documents, code reference, entity/con
 
 ## Why "QCIPHRA"
 
+### Live Demo
+
+Check out the live production version of QCIPHRA here: [https://qciphra.netlify.app/](https://qciphra.netlify.app/)
+
 From Arabic **قِصْفْرَة** (*qiphra*), derived from the science of **Hisab Jummal** (حساب الجُمَّل) — the Abjad numeral system where Arabic letters carry numeric values. This wiki explores the intersection of Quranic structure, prime numbers, the number 19, and computational analysis.
 
 ## Topics Covered
