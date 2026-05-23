@@ -100,3 +100,11 @@ _Append-only chronological record of all wiki operations._
 - Enhanced "Topics Covered" for programmatic analysis.
 - Updated "Workflows" to include "Programmatic Analysis Workflow" and revised "Query Workflow".
 - Updated "Getting Started (for the LLM agent)" to emphasize code-derived facts.
+
+## [2026-05-23 11:45] ingest | Raw Quranic Data Files (.jsonl)
+- **Sources**: `raw/sources/ayahs.jsonl`, `raw/sources/harfs.jsonl`, `raw/sources/kalimahs.jsonl`, `raw/sources/surahs.jsonl` (from [Al-Quran Cloud API](https://alquran.cloud/api))
+- **Pages created**: 1 concept page ([[quran-data-schema]]) describing the overall data schema and pipeline.
+- **Pages updated**:
+  - `[[qciphra-project]]`: Added a "Raw Data Sources" section linking to the `.jsonl` files and `[[quran-data-schema]]`.
+- **Index updated**: Added `[[quran-data-schema]]` to the Concepts section.
+- **Note**: These `.jsonl` files are now formally acknowledged and described within the wiki, detailing their role as foundational data for the QCiphra project's enhanced data generation and explicitly citing their external API source.

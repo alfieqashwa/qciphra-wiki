@@ -23,6 +23,7 @@ _Content catalog for the qciphra knowledge base. Updated on every ingest and que
 - [[vannevar-bush]] — American engineer who proposed the memex in 1945.
 
 ## Concepts
+- [[quran-data-schema]] — Overview of the data schema used in the QCiphra project for Quranic analysis.
 - [[digital-root]] — Repeated digit sum; 19ⁿ always reduces to 1.
 - [[hisab-jummal]] — Abjad numeral system: Arabic letters as numbers (1-1000).
 - [[islamic-numerology]] — Hisab jummal: Quranic numeric patterns and traditions.
