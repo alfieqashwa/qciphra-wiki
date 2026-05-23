@@ -109,15 +109,18 @@ When the human asks a question, **never** just answer in chat. Always persist th
 
 1. **Read** `wiki/index.md` to find relevant pages.
 2. **Read** the most relevant pages.
-3. **Synthesize** an answer with `[[wikilink]]` citations.
-4. **ALWAYS file a new wiki page** — no exceptions for "simple" questions:
+3. **If direct answer is insufficient or unavailable:**
+    - Perform a `web_search` for external information.
+    - OR, if complex computation/derivation is required, initiate the **Programmatic Analysis Workflow** (see below).
+4. **Synthesize** an answer with `[[wikilink]]` citations, incorporating both existing wiki content and newly derived facts.
+5. **ALWAYS file a new wiki page** (or update an existing one) — no exceptions for "simple" questions:
    - Factual lookup → `wiki/sources/` (e.g., `huruf-nun-surah-qamar.md`)
-   - Analysis/derivation → `wiki/synthesis/`
+   - Analysis/derivation (from synthesis or programmatic analysis) → `wiki/synthesis/`
    - New concept → `wiki/concepts/`
    - Person/place/thing → `wiki/entities/`
-5. **Cross-reference** with `[[wikilinks]]` to all related pages.
-6. **Update** `wiki/index.md` with the new page.
-7. **Append** an entry to `wiki/log.md`.
+6. **Cross-reference** with `[[wikilinks]]` to all related pages.
+7. **Update** `wiki/index.md` with the new page (if created/updated).
+8. **Append** an entry to `wiki/log.md`.
 
 **The wiki is the persistent memory. Chat is temporary. If it's not in the wiki, it doesn't exist.**
 
@@ -134,6 +137,18 @@ When asked to health-check the wiki:
 6. Suggest **new questions** to investigate or **new sources** to find.
 7. Write findings to a lint report page in `wiki/synthesis/` and append to log.
 
+### Programmatic Analysis Workflow
+When a question requires complex calculation, data aggregation, or derivation not immediately present in the wiki or easily found via web search, leverage available code assets:
+
+1.  **Identify Relevant Tools:** Determine which TypeScript files (e.g., `generateEnhancedSurah.ts`, `countHarfs.ts`) or custom scripts are needed.
+2.  **Develop/Modify Script:** If necessary, create a new temporary script (e.g., `run_analysis.ts`) or modify an existing one (like `run_surah_analysis.ts`) to perform the specific analysis.
+3.  **Execute Script:** Run the script using `ts-node` or `node dist/`.
+4.  **Extract Results:** Capture the output or read the generated data (e.g., from `src/data/enhanced-*.json`).
+5.  **Synthesize Findings:** Interpret the results and synthesize them into a concise answer.
+6.  **File New Wiki Page (ALWAYS):** Create a new page in `wiki/synthesis/` or `wiki/concepts/` (e.g., `quran-hisab-jummal-overview.md`) that documents the analysis, the derived facts, the methodology (linking to the relevant code files), and any limitations or assumptions.
+7.  **Cross-reference:** Link this new page to relevant existing wiki pages.
+8.  **Update `wiki/index.md`:** Add the new page to the content catalog.
+9.  **Append to `wiki/log.md`:** Record the programmatic analysis operation.
 ## Conventions
 
 - **Page names**: lowercase, hyphenated (`my-page-name.md`).

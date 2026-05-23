@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/node": "^25.9.1",
+    "arabic-services": "^1.0.8"
+  }
+}

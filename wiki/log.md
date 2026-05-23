@@ -65,8 +65,32 @@ _Append-only chronological record of all wiki operations._
   - `wiki/sources/llm-wiki-pattern-explained.md` — penjelasan pattern LLM Wiki
 - **Lesson learned**: Never answer in chat without filing a wiki page. Chat is temporary, wiki is persistent.
 
-## [2026-05-27 00:05] schema | Updated AGENTS.md with strict query rules
-- Added **Rule #7**: "Every answer becomes a wiki page — NO exceptions"
-- Updated **Query Workflow**: explicit step-by-step for filing answers
-- Added bold warning: "The wiki is the persistent memory. Chat is temporary."
-- Renumbered old Rule #7 → Rule #8.
+## [2026-05-23 10:30] query | How many total of entire surahs and ayahs in entire quran?
+- Answered from [[quran-surahs-ayahs-count]].
+
+## [2026-05-23 10:45] query | How many huruf "nun" in Surah Al-Qamar?
+- Analyzed `src/data/enhanced-al-qamar.json` using `get_nun_count.py` script (output from `generateEnhancedSurah.ts`).
+- Answered from [[huruf-nun-surah-al-qamar]].
+
+## [2026-05-23 11:00] test-query | How many total of entire surahs and ayahs in entire quran?
+- Answer retrieved directly from [[quran-surahs-ayahs-count]]. Confirmed persistent knowledge behavior.
+
+## [2026-05-23 11:05] test-query | How many hurf "nun" in Surah Al-Qamar?
+- Answer retrieved directly from [[huruf-nun-surah-al-qamar]]. Confirmed persistent knowledge behavior.
+
+## [2026-05-23 11:15] query | How many total of entire surahs and ayahs in entire quran? (Direct Answer)
+- Answered from [[quran-surahs-ayahs-count]].
+
+## [2026-05-23 11:15] query | How many hurf "nun" in Surah Al-Qamar? (Direct Answer)
+- Answered from [[huruf-nun-surah-al-qamar]].
+
+## [2026-05-23 11:30] schema | Updated AGENTS.md with Programmatic Analysis Workflow
+- Added new section: "Programmatic Analysis Workflow" to formalize code-driven data derivation.
+- Modified "Query Workflow" to include initiation of programmatic analysis when needed.
+- These updates enhance the LLM Wiki to leverage the QCiphra project's analytical capabilities.
+
+## [2026-05-23 11:35] query | How many word "Allah" (arabic lettter) in Surah Al-Baqrah?
+- Performed programmatic analysis using `count_allah_al_baqara.py` on `src/data/enhanced-al-baqara.json`.
+- Derived count: 216.
+- Created new concept page: [[word-allah-count-al-baqarah]].
+- Updated `wiki/index.md`.

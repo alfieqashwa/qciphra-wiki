@@ -1,5 +1,5 @@
 import { ArabicServices } from "arabic-services";
-import { ABJAD_MAP } from "./abjadMap";
+import { ABJAD_MAP, ABJAD_LOOKUP } from "./abjadMap";
 import { ARABIC_HARF_REGEX } from "./arabicHarfRegex";
 import { HARF_NORMALIZATION } from "./normalization";
 import { TRANSLITERATION_MAP } from "./transliteration";
@@ -55,7 +55,7 @@ export function analyzeKalimahsEnhanced(
 
       // Extract Arabic letters from word
       for (const char of kalimah) {
-        const harfInfo = ABJAD_MAP[char];
+        const harfInfo = ABJAD_LOOKUP[char];
 
         // Only process valid Arabic letters
         if (ARABIC_HARF_REGEX.test(char) && harfInfo) {

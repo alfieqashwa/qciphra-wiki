@@ -10,3 +10,11 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Node.js
+node_modules/
+dist/
+package-lock.json
+
+# Generated Quran Data
+src/data/

@@ -14,6 +14,7 @@ _Content catalog for the qciphra knowledge base. Updated on every ingest and que
 - [[log]] — Chronological activity log (ingests, queries, lint passes)
 
 ## Entities
+- [[qciphra-project]] — Overview of the QCiphra project, including its production URL and source code components.
 - [[alfie-qashwa]] — Researcher/developer behind the qciphra project.
 - [[al-khwarizmi]] — Persian mathematician, father of algebra, bridged Indian and Islamic mathematics.
 - [[brahmagupta]] — Indian mathematician who first formalized zero (628 CE).
@@ -34,11 +35,13 @@ _Content catalog for the qciphra knowledge base. Updated on every ingest and que
 - [[zettelkasten]] — Atomic note-taking method with heavy interlinking.
 
 ## Sources — Q&A / Factual Lookups
+- [[word-allah-count-al-baqarah]] — Count of the word "Allah" in Surah Al-Baqarah.
 - [[total-quran-stats]] — Total surahs, ayahs, kalimahs, harfs, Hisab Jummal seluruh Quran.
 - [[huruf-nun-surah-qamar]] — Jumlah huruf Nun (ن) di Surah Al-Qamar = 121.
 - [[llm-wiki-pattern-explained]] — Penjelasan pattern LLM Wiki dan aturan wajib filing jawaban.
 
 ## Sources — Research Documents
+- [[qciphra-source-code]] — Metadata for the QCiphra project's source code.
 - [[abjad-numeral]] — Hisab Jummal / Abjad numeral system history and structure.
 - [[algoritma-checksum]] — Checksum algorithm applied to Quran structure (57:57 parity).
 - [[analisis-teori-ganjil-genap]] — Odd/even parity analysis of surah+ayah numbers.
