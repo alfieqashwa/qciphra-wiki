@@ -94,3 +94,9 @@ _Append-only chronological record of all wiki operations._
 - Derived count: 216.
 - Created new concept page: [[word-allah-count-al-baqarah]].
 - Updated `wiki/index.md`.
+
+## [2026-05-23 11:40] maintenance | Updated README.md
+- Reflected current page count (48+).
+- Enhanced "Topics Covered" for programmatic analysis.
+- Updated "Workflows" to include "Programmatic Analysis Workflow" and revised "Query Workflow".
+- Updated "Getting Started (for the LLM agent)" to emphasize code-derived facts.

@@ -6,7 +6,7 @@ A persistent, compounding knowledge base about numerical patterns in the Quran, 
 
 This is **not** a chat log and **not** a RAG index. Every source ingested makes the wiki richer. Every answer gets filed back in. The wiki compounds over time — the LLM agent is the wiki maintainer; the human is the curator, questioner, and source provider.
 
-Currently at **43+ pages** across research documents, code reference, entity/concept pages, and cross-source synthesis.
+Currently at **48+ pages** across research documents, code reference, entity/concept pages, and cross-source synthesis.
 
 ## Why "QCIPHRA"
 
@@ -16,11 +16,11 @@ From Arabic **قِصْفْرَة** (*qiphra*), derived from the science of **His
 
 | Area | Examples |
 |---|---|
-| **Quran Structure Analysis** | Surah/ayah statistics, odd/even parity, checksum algorithms, prime surahs |
+| **Quran Structure Analysis** | Surah/ayah statistics, odd/even parity, checksum algorithms, prime surahs, **code-driven letter/word counts, Hisab Jummal totals** |
 | **Numeric Mysteries** | Number 19, digital root patterns, connections between primes and Quranic structure |
 | **Abjad Numeral System** | Hisab Jummal history, letter-to-number mapping, Quranic Hisab Jummal totals |
 | **History of Numerals** | Hindu-Arabic numeral transmission (Brahmagupta → Al-Khwarizmi → Fibonacci) |
-| **TypeScript Code Reference** | Full Quran analysis pipeline: harf counting, kalimah analysis, surah generation, normalization |
+| **TypeScript Code Reference** | Full Quran analysis pipeline: harf counting, kalimah analysis, surah generation, normalization, **and scripts for advanced numerical queries** |
 | **LLM Knowledge Systems** | The LLM Wiki pattern itself — memex, zettelkasten, RAG comparisons |
 
 ## Directory Structure
@@ -57,7 +57,8 @@ The LLM agent follows strict rules defined in `AGENTS.md`:
 ### Workflows
 
 - **Ingest**: Drop a source in `raw/sources/` → agent reads, discusses, writes 10–15 wiki pages.
-- **Query**: Ask a question → agent reads relevant pages, synthesizes, files a new wiki page.
+- **Query**: Ask a question → agent first checks existing wiki. If insufficient, it may perform web search or **initiate programmatic analysis using available code assets** to derive facts, then files a new wiki page with the answer.
+- **Programmatic Analysis**: When complex calculations or data derivations are needed (e.g., counting specific words/letters, summing Hisab Jummal across surahs), the agent leverages internal TypeScript tools and generated JSON data, then integrates the findings into new wiki pages.
 - **Lint**: Health-check → scan for orphans, contradictions, stale claims, missing links.
 
 ## Obsidian Features Used
@@ -78,7 +79,7 @@ The LLM agent follows strict rules defined in `AGENTS.md`:
 
 ## Getting Started (for the LLM agent)
 
-Read `AGENTS.md`. Follow the schema. Never modify `raw/`. Always update `wiki/index.md` and `wiki/log.md`. File every answer. No chat-only responses.
+Read `AGENTS.md`. Follow the schema. Never modify `raw/`. Always update `wiki/index.md` and `wiki/log.md`. File every answer, **including those derived from programmatic analysis**. No chat-only responses.
 
 ---
 
