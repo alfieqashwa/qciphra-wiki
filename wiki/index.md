@@ -2,65 +2,58 @@
 title: Wiki Index
 type: index
 created: 2026-05-22
-updated: 2026-05-27
+updated: 2026-05-28
 tags: [index, meta]
 ---
 
 # Wiki Index
 
-_Content catalog for the qciphra knowledge base. Updated on every ingest and query._
+_Katalog konten untuk qciphra knowledge base. Diupdate setiap ingest dan query._
 
 ## Meta
-- [[log]] — Chronological activity log (ingests, queries, lint passes)
+- [[log]] — Log kronologis aktivitas (ingest, query, lint)
 
 ## Entities
-- [[qciphra-project]] — Overview of the QCiphra project, including its production URL and source code components.
-- [[alfie-qashwa]] — Researcher/developer behind the qciphra project.
-- [[al-khwarizmi]] — Persian mathematician, father of algebra, bridged Indian and Islamic mathematics.
-- [[brahmagupta]] — Indian mathematician who first formalized zero (628 CE).
-- [[fibonacci]] — Italian mathematician who brought Hindu-Arabic numerals to Europe (1202 CE).
-- [[obsidian]] — Markdown-based knowledge base IDE with graph view and plugins.
-- [[vannevar-bush]] — American engineer who proposed the memex in 1945.
+- [[qciphra-project]] — Overview proyek QCiphra: URL produksi dan komponen source code.
+- [[alfie-qashwa]] — Peneliti/developer di balik proyek qciphra.
+- [[ali-adams]] — Penemu sistem Primalogy; peneliti numerologi Quran independen.
+- [[al-khwarizmi]] — Matematikawan Persia, bapak aljabar, menjembatani matematika India dan Islam.
+- [[brahmagupta]] — Matematikawan India yang pertama kali memformalkan nol (628 M).
+- [[fibonacci]] — Matematikawan Italia yang membawa angka Hindu-Arab ke Eropa (1202 M).
 
 ## Concepts
-- [[quran-data-schema]] — Overview of the data schema used in the QCiphra project for Quranic analysis.
-- [[digital-root]] — Repeated digit sum; 19ⁿ always reduces to 1.
-- [[hisab-jummal]] — Abjad numeral system: Arabic letters as numbers (1-1000).
-- [[islamic-numerology]] — Hisab jummal: Quranic numeric patterns and traditions.
-- [[llm-wiki-pattern]] — Pattern for building persistent, compounding knowledge bases with LLMs.
-- [[memex]] — Bush's 1945 vision of a personal knowledge store with associative trails.
-- [[number-19]] — Special significance in mathematics and Quran numerology (114 = 6×19).
-- [[prime-number]] — Fundamental building block of integers; classification system.
-- [[quran-structure-analysis]] — Computational analysis of Quranic structural patterns.
-- [[rag]] — Retrieval-augmented generation; stateless, rediscovers knowledge every query.
-- [[zettelkasten]] — Atomic note-taking method with heavy interlinking.
+- [[primalogy]] — Sistem numerologi bilangan prima: nilai prima berurutan untuk huruf Arab.
+- [[hisab-jummal]] — Sistem angka Abjad: huruf Arab sebagai angka (1-1000).
+- [[islamic-numerology]] — Pola numerik Quran berdasarkan hisab jummal dan tradisi.
+- [[number-19]] — Signifikansi angka 19 dalam matematika dan numerologi Quran (114 = 6×19).
+- [[digital-root]] — Jumlah digit berulang; 19ⁿ selalu menjadi 1.
+- [[prime-number]] — Bilangan prima: unit pembangun bilangan bulat, sistem klasifikasi.
+- [[quran-data-schema]] — Schema data Quran untuk analisis komputasional qciphra.
+- [[quran-structure-analysis]] — Analisis komputasional pola struktural Quran.
 
-## Sources — Q&A / Factual Lookups
-- [[word-allah-count-al-baqarah]] — Count of the word "Allah" in Surah Al-Baqarah.
-- [[total-quran-stats]] — Total surahs, ayahs, kalimahs, harfs, Hisab Jummal seluruh Quran.
+## Sources — Factual Lookups
+- [[total-quran-stats]] — Total surah, ayah, kalimah, huruf, Hisab Jummal seluruh Quran.
+- [[word-allah-count-al-baqarah]] — Jumlah kata "Allah" di Surah Al-Baqarah.
 - [[huruf-nun-surah-qamar]] — Jumlah huruf Nun (ن) di Surah Al-Qamar = 121.
-- [[llm-wiki-pattern-explained]] — Penjelasan pattern LLM Wiki dan aturan wajib filing jawaban.
 
 ## Sources — Research Documents
-- [[qciphra-source-code]] — Metadata for the QCiphra project's source code.
-- [[abjad-numeral]] — Hisab Jummal / Abjad numeral system history and structure.
-- [[algoritma-checksum]] — Checksum algorithm applied to Quran structure (57:57 parity).
-- [[analisis-teori-ganjil-genap]] — Odd/even parity analysis of surah+ayah numbers.
-- [[angka-19]] — Number 19 significance, digital root, and Quranic connections.
-- [[asma-ul-husna]] — 99 Names of God with Arabic, Bahasa, and English.
-- [[koneksi-prima-dan-19]] — Mathematical connections between primes and number 19.
-- [[llm-wiki-idea]] — The LLM Wiki pattern document that inspired this system.
-- [[prime-number]] — Prime number theory, classification, and key primes in the research.
-- [[sejarah-angka-hindu-arab]] — History of Hindu-Arabic numerals (India → Islam → Europe).
-- [[surah-surah-prima]] — 7 surahs where both surah number and ayah count are prime.
+- [[abjad-numeral]] — Sistem angka Abjad/Hisab Jummal: sejarah dan struktur.
+- [[algoritma-checksum]] — Algoritma checksum pada struktur Quran (paritas 57:57).
+- [[analisis-teori-ganjil-genap]] — Analisis paritas ganjil-genap nomor surah+ayah.
+- [[angka-19]] — Signifikansi angka 19, digital root, dan koneksi Quranic.
+- [[asma-ul-husna]] — 99 Nama Allah dalam Arab, Indonesia, dan Inggris.
+- [[koneksi-prima-dan-19]] — Koneksi matematika antara bilangan prima dan angka 19.
+- [[sejarah-angka-hindu-arab]] — Sejarah angka Hindu-Arab (India → Islam → Eropa).
+- [[surah-surah-prima]] — 7 surah dimana nomor surah dan jumlah ayah keduanya prima.
+- [[prime-number]] — Teori bilangan prima dan bilangan prima kunci dalam riset.
 
 ## Sources — TypeScript Code
-- [[types-ts]] — Type definitions: EnhancedHarf, EnhancedKalimah, EnhancedAyah, EnhancedSurah.
+- [[types-ts]] — Definisi tipe: EnhancedHarf, EnhancedKalimah, EnhancedAyah, EnhancedSurah.
 - [[abjad-map-ts]] — Peta nilai Abjad/Jummal (27 huruf + lookup + konversi).
-- [[normalization-ts]] — Normalisasi varian huruf Arab ke bentuk canonical.
+- [[normalization-ts]] — Normalisasi varian huruf Arab ke bentuk kanonik.
 - [[transliteration-ts]] — Peta transliterasi huruf Arab ke Latin.
 - [[arabic-harf-regex-ts]] — Regex Unicode untuk deteksi huruf Arab + tashkeel.
-- [[waqf-marks-ts]] — Set 24 karakter tanda waqf/anotasi Quranic.
+- [[waqf-marks-ts]] — Set 24 karakter tanda waqf/anotasi Quran.
 - [[bismillah-ts]] — Konstanta Bismillah + fungsi stripDiacritics().
 - [[count-harfs-ts]] — Penghitungan frekuensi huruf per ayat.
 - [[analyze-kalimahs-enhanced-ts]] — Analisis kata per kata dengan metadata huruf.
@@ -68,14 +61,14 @@ _Content catalog for the qciphra knowledge base. Updated on every ingest and que
 - [[surah-name-ts]] — Metadata offset global per surah (1-114).
 
 ## Synthesis
-- [[qciphra-thesis]] — Cross-source synthesis: numerical patterns in the Quran.
+- [[qciphra-thesis]] — Sintesis lintas sumber: pola numerik dalam Quran.
 
 ## Comparisons
-_(No comparison pages yet.)_
+_(Belum ada halaman perbandingan.)_
 
 ## Dashboards
-_(No dashboards yet.)_
+_(Belum ada dashboard.)_
 
 ---
 
-_Last updated: 2026-05-27 | 43 pages total_
+_Terakhir diupdate: 2026-05-28 | 34 halaman (relokasi non-relevan selesai)_

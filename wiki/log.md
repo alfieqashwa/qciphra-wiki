@@ -108,3 +108,27 @@ _Append-only chronological record of all wiki operations._
   - `[[qciphra-project]]`: Added a "Raw Data Sources" section linking to the `.jsonl` files and `[[quran-data-schema]]`.
 - **Index updated**: Added `[[quran-data-schema]]` to the Concepts section.
 - **Note**: These `.jsonl` files are now formally acknowledged and described within the wiki, detailing their role as foundational data for the QCiphra project's enhanced data generation and explicitly citing their external API source.
+
+## [2026-05-24 13:51] setup | Ciphra Persona & TTS Configuration
+- **Created**: `wiki/concepts/SOUL.md` containing full guidelines on Ciphra's soul configuration, tone rules, Google Gemini TTS `Aoede` voice configuration, and ElevenLabs free tier workaround.
+- **Updated**: `wiki/index.md` (catalogued `[[SOUL]]` under Concepts).
+- **Status**: Google Gemini TTS active, voice = `Aoede`. ElevenLabs credentials removed safely.
+
+## [2026-05-25 00:42] config | Default model changed to Google Gemini 3.5 Flash
+- Updated `~/.hermes/config.yaml` default model to `google/gemini-3.5-flash` to route directly via Google rather than OpenRouter.
+- Patched `hermes_cli/doctor.py` to correctly validate vendor-prefixed models in `config.yaml` when the `model` key is configured as a plain string instead of a dictionary.
+
+## [2026-05-25 00:44] query | ping. tell me who I am and who you are.
+- Identified user as Alfie Qashwa and assistant as Ciphra.
+- Verified background details from persistent memories.
+- Created `wiki/sources/ping-identity-check.md` to document the identities.
+- Updated `wiki/index.md` with new page and page count (44 pages total).
+- Appended entry to `wiki/log.md`.
+## [2026-05-28] config | Miracle Numerology Research Domain added to AGENTS.md
+- Added comprehensive "Miracle Numerology — Research Domain" section to `AGENTS.md`
+- Defined 8 research categories: Hisab Jummal, Angka 19, Ganjil-Genap, Letter-Level, Word-Level, Structural Bookkeeping, Prime Numbers, Geometric/Spatial
+- Documented all code assets (Python scripts, TypeScript files, JSONL data files)
+- Established 4-tier evidence classification system (Tier 1 Verified → Tier 4 Debunked)
+- Added research methodology rules: computational verification required, cherry-picking defense, standard Abjad values
+- Listed 6 key source files and 8 investigation priority areas
+- Updated `wiki/index.md` timestamp
