@@ -317,7 +317,7 @@ PDF/buku ini tersimpan di luar vault tapi adalah referensi primer. Baca dengan `
 | File | Penulis | Konten |
 |---|---|---|
 | `~/Documents/BOOKS/RELIGION/quran-code/Primalogy` | Ali Adams | Sistem Primalogy: nilai prima untuk huruf Arab, validasi additive prime, golden ratio dalam struktur Quran |
-| `~/Documents/BOOKS/RELIGION/quran-code/114.pdf` | Ali Adams | Mathematical Structure of the Quran: sistem valuasi huruf, analisis struktural |
+| `~/Documents/BOOKS/RELIGION/quran-code/114.pdf` | Ali Adams | Mathematical Structure of the Quran (180 halaman): 7+ sistem valuasi huruf, 114 angka struktur, factorial series, golden ratio, bi-symmetry, statistik additive/non-additive, klasifikasi bilangan, ratusan pola terdokumentasi. Lihat ringkasan: `wiki/sources/114-pdf-summary.md` |
 | `~/Documents/BOOKS/RELIGION/quran-code/appendix.pdf` | — | Appendix dengan contoh kode matematika berbasis 19 dari Rashad Khalifa |
 | `~/Documents/BOOKS/RELIGION/quran-code/bp.pdf` | Abdullah Arik | Beyond Probability: desain matematika Basmalah (United Submitters International) |
 

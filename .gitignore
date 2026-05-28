@@ -18,3 +18,7 @@ package-lock.json
 
 # Generated Quran Data
 src/data/
+
+# PDF files — too large for git, read-only references
+*.pdf
+*.png

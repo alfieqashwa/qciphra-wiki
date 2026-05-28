@@ -46,6 +46,7 @@ _Katalog konten untuk qciphra knowledge base. Diupdate setiap ingest dan query._
 - [[sejarah-angka-hindu-arab]] — Sejarah angka Hindu-Arab (India → Islam → Eropa).
 - [[surah-surah-prima]] — 7 surah dimana nomor surah dan jumlah ayah keduanya prima.
 - [[prime-number]] — Teori bilangan prima dan bilangan prima kunci dalam riset.
+- [[114-pdf-summary]] — Ringkasan Mathematical Structure of the Quran (180 hal., Ali Adams): 7+ sistem valuasi, factorial series, golden ratio, bi-symmetry, ratusan pola.
 
 ## Sources — TypeScript Code
 - [[types-ts]] — Definisi tipe: EnhancedHarf, EnhancedKalimah, EnhancedAyah, EnhancedSurah.

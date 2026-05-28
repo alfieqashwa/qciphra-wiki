@@ -132,3 +132,29 @@ _Append-only chronological record of all wiki operations._
 - Added research methodology rules: computational verification required, cherry-picking defense, standard Abjad values
 - Listed 6 key source files and 8 investigation priority areas
 - Updated `wiki/index.md` timestamp
+
+## [2026-05-28] restructure | Refokus wiki ke Numerologi Quran + Primalogy
+- AGENTS.md: translate full ke Bahasa Indonesia
+- AGENTS.md: tambah 9 kategori riset numerologi Quran
+- AGENTS.md: tambah sistem Primalogy (bilangan prima → huruf Arab)
+- AGENTS.md: tambah Novel Finding Workflow, External Reference Files, tier bukti (1-4)
+- Hapus 11 file tidak relevan: obsidian, vannevar-bush, SOUL, rag, memex, zettelkasten, llm-wiki-pattern, ping-identity-check, llm-wiki-pattern-explained, llm-wiki-idea, qciphra-source-code
+- Buat wiki/concepts/primalogy.md — dokumentasi sistem Primalogy
+- Buat wiki/entities/ali-adams.md — profil Ali Adams, penemu Primalogy
+- Update wiki/index.md: hanya 34 halaman relevan (dari 44)
+- Salin Primalogy PDF dan 114.pdf ke raw/sources/
+- Semua perubahan di-commit: 39a1812
+
+## [2026-05-28] ingest | Mathematical Structure of the Quran (114.pdf)
+- Membaca seluruh 180 halaman 114.pdf (Ali Adams, 2019)
+- Mengekstrak 55.000+ line teks via pdftotext
+- Membuat wiki/sources/114-pdf-summary.md — ringkasan komprehensif:
+  - 7+ sistem valuasi huruf (Abjad, Primalogy, Frequency_Linear, dll.)
+  - Klasifikasi bilangan: {U}, {P}, {AP}, {XP}, {C}, {AC}, {XC}, {AB}, {PF}, {DF}, {AM}, {Co}
+  - 11 pola utama: Quran=Key+Message, Al-Fatihah (7,29,139), Angka 19, Bi-symmetry, Golden Ratio, Angka 319, Surah 114, Factorial Series, Statistik additive/non-additive, Simetri, Special Number Sets
+  - Hipotesis Quran sebagai DNA alam semesta
+- Update wiki/entities/ali-adams.md — profil lengkap: pendidikan, 2 publikasi, 7 kontribusi utama
+- Update wiki/concepts/primalogy.md — koneksi ke 114.pdf
+- Update AGENTS.md — deskripsi 114.pdf lebih detail + link ke summary
+- Update wiki/index.md — tambah 114-pdf-summary
+- .gitignore: tambah *.pdf dan *.png (file besar, read-only reference)
